@@ -1,0 +1,88 @@
+
+
+.hero-section {
+	position: relative;
+	padding-top: 60px;
+  padding-bottom: 10px;
+  background-image: url('../../assets/img/theme/Background-01.gif');
+   background-size: cover;
+   min-height: 100vh;
+;
+}
+.hero-section .container {
+	position: relative;
+	z-index: 5;
+}
+  
+  #notfound .notfound {
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  
+  .notfound {
+    width: 100%;
+    text-align: center;
+    line-height: 1.4;
+  }
+  
+  .notfound .notfound-404 {
+    height: 158px;
+    line-height: 153px;
+  }
+  
+  .notfound .notfound-404 h1 {
+    font-family: NoirStd;
+    color: rgb(19, 68, 97);
+    font-size: 220px;
+    letter-spacing: 10px;
+    font-weight: 700;
+    margin-top: 50%;
+    text-shadow: 2px 2px 0px #c9c9c9, -2px -2px 0px #c9c9c9;
+  }
+  
+  .notfound .notfound-404 h1>span {
+    text-shadow: 2px 2px 0px #ffab00, -2px -2px 0px #ffab00, 0px 0px 8px #ff8700;
+  }
+  
+  .notfound p {
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 80px;
+    margin-bottom: 15px;
+    font-family: NoirStd;
+
+  }
+  
+
+  
+  @media only screen and (max-width: 480px) {
+    .notfound .notfound-404 {
+      height: 122px;
+      line-height: 122px;
+    }
+  
+    .notfound .notfound-404 h1 {
+        font-size: 122px;
+       margin-top: 50%;
+
+    }
+    .notfound .notfound-404 h1 {
+      font-family: NoirStd;
+      color: rgb(19, 68, 97);
+      font-size: 120px;
+      letter-spacing: 10px;
+      font-weight: 700;
+      margin-top: 100%;
+      text-shadow: 2px 2px 0px #c9c9c9, -2px -2px 0px #c9c9c9;
+    }
+  }
+
+      
+
+  

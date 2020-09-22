@@ -1,0 +1,157 @@
+<main>
+
+<section class="section section-lg pt-lg-0 section-contact-us" style="background-image: url(../../assets/img/theme/Png5.png);background-size: cover; margin-top: 3%;">
+    <div class="container">
+      <div class="row justify-content-center mt--2200">
+        <div class="col-lg-6 mb-5" style="margin-top: 10%;" data-aos="flip-up">
+          
+   
+          <form class="p-5 bg-form justify-content-left"     name="form" 
+          #form="ngForm">
+            
+            <div class="row form-group">
+              <div class="col-md-6 mb-3 mb-md-0">
+                <label class="text-black" *ngIf="!ar"  [ngStyle]="myStyles"  ><sup class="text-danger">*</sup>  First Name</label>
+                <label class="text-black" *ngIf="ar"  [ngStyle]="myStyles" ><sup class="text-danger">*</sup>  الآسم الآول </label>
+    
+                <input 
+                type="text" 
+                name="firstNameng"
+                #firstName="ngModel"
+                class="form-control"
+                autocomplete="off"
+                [ngClass]="{'is-invalid': formSubmitted && firstName.invalid || (firstName.invalid && (firstName.dirty || firstName.touched))}"
+                [(ngModel)]="message.firstName"
+                                    
+                >
+              </div>
+              <div class="col-md-6">
+                <label class="text-black" *ngIf="!ar"  [ngStyle]="myStyles"  > <sup class="text-danger">*</sup>  Last Name</label>
+                <label class="text-black" *ngIf="ar"  [ngStyle]="myStyles" ><sup class="text-danger">*</sup>  الآسم الآخير </label>
+    
+                <input 
+                type="text" 
+                name="lasttName"
+                #lastName="ngModel"
+                class="form-control"
+                autocomplete="off"
+                [ngClass]="{'is-invalid': formSubmitted && lastName.invalid || (lastName.invalid && (lastName.dirty || lastName.touched))}"
+                [(ngModel)]="message.lastName"
+                                    
+                
+                >
+              </div>
+            </div>
+    
+            <div class="row form-group">
+    
+              <div class="col-md-12">
+                <label class="text-black"  *ngIf="!ar"  [ngStyle]="myStyles" for="email"i18n>  <sup class="text-danger">*</sup> Email</label> 
+                <label class="text-black" *ngIf="ar"  [ngStyle]="myStyles" ><sup class="text-danger">*</sup>   البريد الآلكتروني </label>
+    
+                <input type="email"
+                name="email"
+                #email="ngModel"
+                class="form-control"
+                autocomplete="off"
+                [ngClass]="{'is-invalid': formSubmitted && email.invalid || (email.invalid && (email.dirty || email.touched))}"
+                [(ngModel)]="message.email">
+              </div>
+            </div>
+    
+    
+    
+            <div class="row form-group">
+              <div class="col-md-12">
+                <label class="text-black" *ngIf="!ar"  [ngStyle]="myStyles" > <sup class="text-danger">*</sup> Message</label> 
+                <label class="text-black" *ngIf="ar"  [ngStyle]="myStyles" ><sup class="text-danger">*</sup>    الرساله </label>
+    
+                <textarea name="description"cols="30" rows="7" class="form-control" placeholder=""
+                #description="ngModel"
+                class="form-control"
+                autocomplete="off"
+                [ngClass]="{'is-invalid': formSubmitted && description.invalid || (description.invalid && (description.dirty || description.touched))}"
+                [(ngModel)]="message.description"></textarea>
+              </div>
+            </div>
+    <div class="row justify-content-center">
+            <div class="row form-group ">
+              <div class="col-md-12" *ngIf="!ar"  [ngStyle]="myStyles">
+                <input type="submit" value="Send Message" class="btn btn-primary btn-md text-white"
+                (click)="save()"
+                [disabled]="isBusy">
+              </div>
+    
+              <div class="col-md-12" *ngIf="ar"  [ngStyle]="myStyles">
+                <input type="submit" value="ارسل رسالتك " class="btn btn-primary btn-md text-white"
+                (click)="save()"
+                [disabled]="isBusy">
+              </div>
+            </div>
+    
+          </div>
+          </form>
+          </div>
+          <div class="col-md-1">
+     
+          </div>
+          <div class="col-lg-5" data-aos="flip-right">
+            <div class="bg-form  shadow " style="margin-top: 44%;">
+              <div class="card-body p-lg-5">
+             <div class="row justify-content-center">
+                <a target="_blank" href="https://twitter.com/ezicodes?s=09" class="btn btn-neutral btn-icon-only btn-twitter btn-round btn-lg" ngbTooltip="Follow us">
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a target="_blank"   href="https://www.facebook.com/ {{Facebook}}" class="btn btn-neutral btn-icon-only btn-facebook btn-round btn-lg" ngbTooltip="Like us">
+                  <i class="fa fa-facebook-square"></i>
+                </a>
+              
+                <a target="_blank"  href="https://ae.linkedin.com/{{LinkedIn}}" class="btn btn-neutral btn-icon-only btn-github btn-round btn-lg" ngbTooltip="Star on LinkedIn">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a target="_blank" href="https://www.instagram.com/p/CALlX3eg3TW/?igshid=xiqcaxsqjao4" class="btn btn-neutral btn-icon-only btn-github btn-round btn-lg" ngbTooltip="Follow on Instagram">
+                  <i class="fa fa-instagram"></i>
+                </a>
+              
+             </div>
+             <div class="row justify-content-right " style="margin-top: 20px;" >
+      
+              <ul class="icn ">
+                <li >  
+                 
+                  
+                  <i class="fa fa-map-marker"></i>
+                   <a   [ngStyle]="myStyles" class="textform">{{Address}}  
+                </a>
+              </li>
+                <li>   <i class="fa fa-envelope "></i>
+                <a class="textform" 
+                  href="{{Email}}">
+                       {{Email}}
+                </a></li>
+    
+    
+                <li>   <i class="fa fa-phone "></i>  
+                <a  [ngStyle]="myStyles" class="textform">
+                           {{Telephone}} 
+                </a> </li>
+                <li>   <i class="fa fa-fax fa-1x"></i>
+                <a  [ngStyle]="myStyles" class="textform"> {{Fax}}</a></li>
+    
+               
+              </ul>
+         
+              
+    
+            </div>
+               
+              </div>
+            </div>
+          </div>
+  
+    
+      </div>
+    </div>
+  </section>
+  
+</main>

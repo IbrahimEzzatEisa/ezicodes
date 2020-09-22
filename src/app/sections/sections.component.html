@@ -1,0 +1,291 @@
+<section class="section section-lg section-shaped" data-aos="zoom-in" style="background-image: url(../../assets/img/theme/Background-01.gif);background-size: contain;
+" >
+
+  <div class="container py-md">
+    <div class="row row-grid justify-content-between align-items-center">
+
+      <div class="col-lg-5 mb-lg-auto">
+        <div class="transform-perspective-left">
+         <img [src]="image" class="img-fluid floating" data-aos="fade-down-right">
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <h3    *ngIf="!ar"   [ngStyle]="myStyles"  class="display-3 text-white text-center" data-aos="flip-left" > About EZICodes
+        </h3>
+
+        <h3  *ngIf="ar"   [ngStyle]="myStyles"   class="display-3 text-white text-center" data-aos="flip-left" > معلومات عنا 
+        </h3>
+
+        <p    [ngStyle]="myStyles" data-aos="fade-up-left" class="lead text-white text-center">{{content}}
+                    </p>
+        
+      </div>
+   
+    </div>
+  </div>
+  <!-- SVG separator -->
+  <div class="separator separator-bottom separator-skew">
+    <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1">
+      <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
+    </svg>
+  </div>
+</section> 
+
+<section class="section section-lg">
+  <div class="container">
+    <div class="row justify-content-center text-center mb-lg">
+      <div class="col-lg-8">
+        <h2 *ngIf="!ar" [ngStyle]="myStyles" class="display-3" >Why EZICodes</h2>
+        <h2 *ngIf="ar" [ngStyle]="myStyles" class="display-3" >لماذا نحن ؟ </h2>
+
+        <p *ngIf="!ar" [ngStyle]="myStyles" class="lead text-muted" >We are Building a lasting partnership with client for the seek of deeply understand the business, goals, customers, strengths, weaknesses, opportunities and challenges   to push the digital solution forward and build well- designed and attractive interfaces to enable the client to establish meaningful connections with his customers, through presenting to you the most inspirational creative ideas that have real business value</p>
+        <p *ngIf="ar" [ngStyle]="myStyles" class="lead text-muted" > نحن نبني شراكة دائمة مع العميل من أجل السعي إلى فهم عميق للأعمال والأهداف والعملاء ونقاط القوة والضعف والفرص والتحديات لدفع الحل الرقمي إلى الأمام وبناء واجهات جيدة التصميم وجذابة لتمكين العميل من إقامة اتصالات ذات مغزى. مع عملائه ، من خلال تقديم أكثر الأفكار الإبداعية إلهامًا والتي لها قيمة تجارية حقيقية </p>
+
+      </div>
+    </div>
+ 
+ 
+    <div class="row" data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="1500"    >
+      <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" *ngFor="let item of whyItem; let i=index" >
+        <div class="px-4">
+          <img [src]="item.icon" class="rounded-circle img-center img-fluid shadow shadow-lg--hover " style="width: 200px;">
+          <div class="pt-4 text-center">
+            <h5  [ngStyle]="myStyles" class="title">
+              <span   [ngStyle]="myStyles" class="d-block mb-1"> {{item.title}}  </span>
+              <small class="h6 text-muted"> </small>
+            </h5>
+    
+          </div>
+        </div>
+      </div>
+
+
+    
+      
+    </div>
+  </div>
+</section>
+<section class="section section-shaped" style="background-image: url(../../assets/img/theme/Background-01.gif);background-size: contain;
+">
+  <div class="shape shape-style-1 shape-default">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="container py-md">
+    <div class="row justify-content-between align-items-center">
+      <div class="col-lg-5 mb-5 mb-lg-0">
+        <h1  [ngStyle]="myStyles" class="display-3 text-white">{{titels}} </h1>
+        <p  [ngStyle]="myStyles"  class="lead text-white mt-4">{{intro}}</p>
+      </div>
+      <div class="col-lg-6 mb-lg-auto">
+        <div class="rounded shadow-lg overflow-hidden transform-perspective-right">
+          <ngb-carousel>
+              <ng-template ngbSlide>
+                <div class="row align-items-center justify-content-center "   data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500 ">
+                  <div class="col-lg-9 col-md-9 col-sm-9 text-center" >
+                    <h3 class="display-1 mb-0    "*ngIf="close" style="color: rgba(255, 255, 255, 0.191) !important; margin-top: 20%;">   EZI CODES Services </h3>
+                  </div>
+                </div>
+                <img class="img-fluid" [src]="images" >
+              </ng-template>
+        
+          </ngb-carousel>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- SVG separator -->
+  <div class="separator separator-bottom separator-skew">
+    <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none">
+      <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
+    </svg>
+  </div>
+</section>
+
+
+<section class="section section-lg pt-0" data-aos="fade-up"
+data-aos-anchor-placement="top-center">
+  <div class="container">
+    <div class="card border-0">
+      <div class="p-5">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-lg-8">
+            <h3 *ngIf="!ar"  [ngStyle]="myStyles" class="text-blue " >We made website building easier for you.</h3>
+              <h3 *ngIf="ar"  [ngStyle]="myStyles" class="text-blue  " >لقد جعلنا بناء مواقع الويب أسهل بالنسبة لك</h3>
+
+            <p *ngIf="!ar"  [ngStyle]="myStyles" class="lead text-blue mt-3 "  >I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture.</p>
+            <p *ngIf="ar"  [ngStyle]="myStyles" class="lead text-blue mt-3 "  >سأكون قائد شركة تنتهي في النهاية، لأنني حصلت على الإجابات ونفهم الثقافات المختلفة  ..</p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-lg pt-lg-0 section-contact-us" style="background-image: url(../../assets/img/theme/Png5.png);background-size: cover; margin-top: 3%;">
+  <div class="container">
+    <div class="row justify-content-center">
+    
+      <div class="col-lg-6   mb-5" style="margin-top: 10%;" data-aos="flip-up">
+      
+
+      <form class="p-5 bg-form justify-content-left"     name="form" 
+      #form="ngForm">
+        
+        <div class="row form-group">
+          <div class="col-md-6 mb-3 mb-md-0">
+            <label class="text-black" *ngIf="!ar"  [ngStyle]="myStyles"  ><sup class="text-danger">*</sup>  First Name</label>
+            <label class="text-black" *ngIf="ar"  [ngStyle]="myStyles" ><sup class="text-danger">*</sup>  الآسم الآول </label>
+
+            <input 
+            type="text" 
+            name="firstNameng"
+            #firstName="ngModel"
+            class="form-control"
+            autocomplete="off"
+            [ngClass]="{'is-invalid': formSubmitted && firstName.invalid || (firstName.invalid && (firstName.dirty || firstName.touched))}"
+            [(ngModel)]="message.firstName"
+                                
+            >
+          </div>
+          <div class="col-md-6">
+            <label class="text-black" *ngIf="!ar"  [ngStyle]="myStyles"  > <sup class="text-danger">*</sup>  Last Name</label>
+            <label class="text-black" *ngIf="ar"  [ngStyle]="myStyles" ><sup class="text-danger">*</sup>  الآسم الآخير </label>
+
+            <input 
+            type="text" 
+            name="lasttName"
+            #lastName="ngModel"
+            class="form-control"
+            autocomplete="off"
+            [ngClass]="{'is-invalid': formSubmitted && lastName.invalid || (lastName.invalid && (lastName.dirty || lastName.touched))}"
+            [(ngModel)]="message.lastName"
+                                
+            
+            >
+          </div>
+        </div>
+
+        <div class="row form-group">
+
+          <div class="col-md-12">
+            <label class="text-black"  *ngIf="!ar"  [ngStyle]="myStyles" for="email"i18n>  <sup class="text-danger">*</sup> Email</label> 
+            <label class="text-black" *ngIf="ar"  [ngStyle]="myStyles" ><sup class="text-danger">*</sup>   البريد الآلكتروني </label>
+
+            <input type="email"
+            name="email"
+            #email="ngModel"
+            class="form-control"
+            autocomplete="off"
+            [ngClass]="{'is-invalid': formSubmitted && email.invalid || (email.invalid && (email.dirty || email.touched))}"
+            [(ngModel)]="message.email">
+          </div>
+        </div>
+
+
+
+        <div class="row form-group">
+          <div class="col-md-12">
+            <label class="text-black" *ngIf="!ar"  [ngStyle]="myStyles" > <sup class="text-danger">*</sup> Message</label> 
+            <label class="text-black" *ngIf="ar"  [ngStyle]="myStyles" ><sup class="text-danger">*</sup>    الرساله </label>
+
+            <textarea name="description"cols="30" rows="7" class="form-control" placeholder=""
+            #description="ngModel"
+            class="form-control"
+            autocomplete="off"
+            [ngClass]="{'is-invalid': formSubmitted && description.invalid || (description.invalid && (description.dirty || description.touched))}"
+            [(ngModel)]="message.description"></textarea>
+          </div>
+        </div>
+<div class="row justify-content-center">
+        <div class="row form-group ">
+          <div class="col-md-12" *ngIf="!ar"  [ngStyle]="myStyles">
+            <input type="submit" value="Send Message" class="btn btn-primary btn-md text-white"
+            (click)="save()"
+            [disabled]="isBusy">
+          </div>
+
+          <div class="col-md-12" *ngIf="ar"  [ngStyle]="myStyles">
+            <input type="submit" value="ارسل رسالتك " class="btn btn-primary btn-md text-white"
+            (click)="save()"
+            [disabled]="isBusy">
+          </div>
+        </div>
+
+      </div>
+      </form>
+      </div>
+   <div class="col-md-1">
+   </div>
+      <div class="col-lg-5" data-aos="flip-right">
+        <div class="bg-form  shadow " style="margin-top: 44%;">
+          <div class="card-body p-lg-5">
+         <div class="row justify-content-center">
+            <a target="_blank" href="https://twitter.com/ezicodes?s=09" class="btn btn-neutral btn-icon-only btn-twitter btn-round btn-lg" ngbTooltip="Follow us">
+              <i class="fa fa-twitter"></i>
+            </a>
+            <a target="_blank"   href="https://www.facebook.com/ {{Facebook}}" class="btn btn-neutral btn-icon-only btn-facebook btn-round btn-lg" ngbTooltip="Like us">
+              <i class="fa fa-facebook-square"></i>
+            </a>
+         
+            <a target="_blank"  href="https://ae.linkedin.com/{{LinkedIn}}" class="btn btn-neutral btn-icon-only btn-github btn-round btn-lg" ngbTooltip="Star on LinkedIn">
+              <i class="fa fa-linkedin"></i>
+            </a>
+
+            <a target="_blank" href="https://www.instagram.com/p/CALlX3eg3TW/?igshid=xiqcaxsqjao4" class="btn btn-neutral btn-icon-only btn-github btn-round btn-lg" ngbTooltip="Follow on Instagram">
+              <i class="fa fa-instagram"></i>
+            </a>
+          
+         </div>
+         <div class="row justify-content-left " >
+  
+          <ul class="icn ">
+            <li>  
+             
+                         <i class="fa fa-map-marker" ></i>
+                 <a   [ngStyle]="myStyles" class="textform">{{Address}}  
+                </a>      
+          </li>
+            <li>   <i class="fa fa-envelope "></i>
+            <a class="textform" 
+            href="{{Email}}">
+                   {{Email}}
+            </a></li>
+
+
+            <li>   <i class="fa fa-phone "></i>  
+            <a  [ngStyle]="myStyles"  class="textform">
+                       {{Telephone}} 
+            </a> </li>
+            <li>   <i class="fa fa-fax fa-1x"></i>
+            <a   [ngStyle]="myStyles" class="textform"> {{Fax}}</a></li>
+
+           
+          </ul>
+     
+          
+
+        </div>
+
+
+        
+           
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+  </div>
+</section>
+
+

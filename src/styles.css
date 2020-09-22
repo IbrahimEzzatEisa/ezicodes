@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: NoirStd;
+    src: url("../src/assets/fonts/NoirStd-Regular.ttf");
+  }
+  
+  
+@font-face {
+  font-family: Arabic;
+  src: url("../src/assets/fonts/ArbFONTS-GE_SS_TWO_MEDIUM.otf");
+}
+

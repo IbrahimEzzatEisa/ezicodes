@@ -1,0 +1,88 @@
+<footer class="footer" >
+
+  <div class="container">
+    <div class="row ">
+      <div class="col-md-12">
+        <div class="row ">
+          <div class="col-md-4 text-lg-center">
+            <h2   *ngIf="!ar"   [ngStyle]="myStyles" class="footer-heading mb-4" >About Us</h2>
+            <h2    *ngIf="ar"  [ngStyle]="myStyles"  class="footer-heading mb-4" >معلومات عنا  </h2>
+
+            <hr>
+            <p [ngStyle]="myStyles" class="foo" >{{content}} </p>
+          </div>
+      
+          <div class=" col-xl-4 col-lg-4  col-md-4  col-sm-4  text-lg-center " >
+            <div class="ft-contact">
+            
+      <h2 class="footer-heading mb-4" *ngIf="!ar"   [ngStyle]="myStyles" > Quick Links </h2>
+      <h2 class="footer-heading mb-4" *ngIf="ar"   [ngStyle]="myStyles" > روابط سريعة  </h2>
+
+              <hr>
+              <ul *ngIf="!ar"   [ngStyle]="myStyles"  >
+                <li> <a class="links" [ngStyle]="myStyles" [routerLink]="['/home']" > HOME</a></li>
+                <li> <a class="links"  [ngStyle]="myStyles" [routerLink]="['/about']" > ABOUT US</a></li>
+                <li> <a class="links"  [ngStyle]="myStyles" [routerLink]="['/whyezicodes']" > WHY EZI CODES</a></li>
+                <li> <a  class="links"  [ngStyle]="myStyles" [routerLink]="['/eziservices/digitalsolutionsandinnovationsKeyservices']" > SERVICES</a></li>
+                <li> <a class="links"  [ngStyle]="myStyles" [routerLink]="['/contact']"  > CONTACT</a></li>
+               
+              </ul>
+
+              <ul *ngIf="ar"   [ngStyle]="myStyles" >
+                <li> <a class="links" [ngStyle]="myStyles" [routerLink]="['/home']" > الصفحة الرئيسية </a></li>
+                <li> <a class="links" [ngStyle]="myStyles"  [routerLink]="['/about']" > معلومات عنا</a></li>
+                <li> <a class="links" [ngStyle]="myStyles"  [routerLink]="['/whyezicodes']" > الخدمات</a></li>
+                <li> <a  class="links"  [ngStyle]="myStyles" [routerLink]="['/eziservices/digitalsolutionsandinnovationsKeyservices']" > الخدمات</a></li>
+                <li> <a class="links"  [ngStyle]="myStyles" [routerLink]="['/contact']"  > تواصل بنا</a></li>
+               
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4 ">
+            <div class="ft-contact">
+
+      <h2  *ngIf="!ar"   [ngStyle]="myStyles" class="footer-heading mb-4 text-lg-center" > Follow Us</h2>
+      <h2  *ngIf="ar"   [ngStyle]="myStyles" class="footer-heading mb-4 text-lg-center" >   تابعنا عبر</h2>
+
+
+            <hr>
+            <div class="col-lg-12 text-lg-center btn-wrapper">
+              <a target="_blank" href="https://twitter.com/ezicodes?s=09" class="btn btn-neutral btn-icon-only btn-twitter btn-round btn-lg " ngbTooltip="Follow us">
+                <i class="fa fa-twitter"></i>
+              </a>
+              <a target="_blank"  href="https://www.facebook.com/{{Facebook}}" class="btn btn-neutral btn-icon-only btn-facebook btn-round btn-lg" ngbTooltip="Like us">
+                <i class="fa fa-facebook-square"></i>
+              </a>
+          
+              <a target="_blank"  href="https://ae.linkedin.com/{{LinkedIn}}" class="btn btn-neutral btn-icon-only btn-github btn-round btn-lg" ngbTooltip="Star on LinkedIn">
+                <i class="fa fa-linkedin"></i>
+              </a>
+              <a target="_blank"  href="https://www.instagram.com/p/CALlX3eg3TW/?igshid=xiqcaxsqjao4" class="btn btn-neutral btn-icon-only btn-github btn-round btn-lg" ngbTooltip="Follow on Instagram">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+    </div>
+    <hr>
+    <div class="row align-items-center justify-content-md-between">
+      <div class="col-lg-12 text-lg-center">
+        <div class="copyright"  *ngIf="!ar"   [ngStyle]="myStyles" >
+          &copy; {{test | date: 'yyyy'}}
+          Copyright &copy;  All rights reserved | This template is made with  by EZI CODES
+
+        </div>
+
+        <div class="copyright"  *ngIf="ar"   [ngStyle]="myStyles" >
+          &copy; {{test | date: 'yyyy'}}
+          حقوق النشر  &copy;  جميع الحقوق محفوظة | يرصد هذا الموقع بواسطة EZI CODES
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>

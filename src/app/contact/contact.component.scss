@@ -1,0 +1,47 @@
+.bg-form{
+    background-color: rgba(255, 255, 255, 0.554) 
+    !important;
+    border-radius: 20px;
+}
+.btn-primary {
+    color: #212529;
+    background-color: #00688f;
+    border-color: #00688f;
+  }
+  .btn {
+    border-radius: 30px;
+  }
+  .textform{
+    color: #00668f;
+    font-family: NoirStd ;
+    font-size: 15px;
+    margin-left: 5px    ;
+  }
+  li{
+      list-style: none;
+  }
+  .btn-github {
+    background-color: #00668f !important;
+    border: #00668f !important;
+  }
+  .btn-dribbble {
+    background-color: #00668f !important;
+    border: #00668f !important;
+  
+  }
+  .btn-facebook{
+    background-color: #00668f !important;
+    border: #00668f !important;
+  }
+  .btn-twitter{
+    background-color: #00668f !important;
+    border: #00668f !important;
+  }
+  .btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+    margin-right: 7px;
+}
+li {
+  list-style: none;
+  direction: ltr !important;
+}

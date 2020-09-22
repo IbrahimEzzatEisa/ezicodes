@@ -1,0 +1,32 @@
+<main>
+
+
+  <section class="section section-lg section-shaped" data-aos="zoom-in" >
+  
+    <div class="container  " >
+      <div class="row row-grid justify-content-between align-items-center">
+  
+       
+        <div class="col-lg-7">
+          <h3 *ngIf="!ar" [ngStyle]="myStyles"  class="display-3 text-center" data-aos="flip-left" > About EZICodes
+          </h3>
+          <h3 *ngIf="ar" [ngStyle]="myStyles"  class="display-3 text-center" data-aos="flip-left" > معلومات عنا 
+          </h3>
+          <p [ngStyle]="myStyles"  data-aos="fade-up-left" class="lead text-white">{{content}}
+                      </p>
+          
+        </div>
+
+        <div class="col-lg-4 mb-lg-auto">
+          <div class="transform-perspective-right text-right">
+           <img [src]="image" class="img " data-aos="fade-down-right">
+          </div>
+        </div>
+     
+      </div>
+
+      
+    </div>
+ 
+  </section> 
+</main>

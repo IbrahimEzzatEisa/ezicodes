@@ -1,0 +1,291 @@
+
+ <div class="site-wrap"      >
+  <div class="border-bottom top-bar py-2 bg-dark"
+    id="home-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-5 col-lg-5 col-md-5  col-sm-4 " style="margin-left: 16px !important; "   >
+          <p class="mb-0">
+            <span class="mr-0  "><strong class="text-white" style="font-size: 16px;     ;
+              "> <i class="fa fa-phone "></i></strong> <a style="color: white; font-size: 13px; margin-left: -19px;
+"
+          [ngStyle]="myStyles"   > {{Telephone}}</a></span>
+        
+
+
+             <span><strong class="text-white"style="font-size: 10px; " > <i class="fa fa-envelope" style="margin-left: 0  px; "></i></strong> <a style="color: white;   font-size: 13px;margin-left: -20px ; margin-right: -10px;"
+              > {{Email}}</a></span>
+          </p>
+        </div>
+
+        <div class="col-xl-3"></div>
+        <div class="col-xl-3 col-lg-3 col-md-3 " >
+          <div class="social-media text-center">
+            <a   href="https://www.facebook.com/ {{Facebook}}"><i class="fa fa-facebook-f" style="margin-right:5px" ></i></a>
+           
+            <a href="https://twitter.com/ezicodes?s=09"
+              class="p-2"><span class="fa fa-twitter"></span></a>
+         
+            <a href="https://ae.linkedin.com/{{LinkedIn}}"
+              class="p-2"><span class="fa fa-linkedin"></span></a>
+
+
+            <a href="https://www.instagram.com/p/CALlX3eg3TW/?igshid=xiqcaxsqjao4"
+            class="p-2"><span class="fa fa-instagram"></span></a>
+
+
+
+    <a  style="margin-right: 15px; margin-left: 30px;">
+      <a class="sl-nav" >
+        <a style="color: white; margin-left: 25px;  ">
+
+          <i class="fa fa-globe" ></i>
+        </a>
+        <ul >
+          <li><b></b> <i style="margin-left: 10px;;" class="fa fa-angle-down" aria-hidden="true"></i>
+            <div class="triangle"></div>
+            <ul>
+              <li (click)="Arb()"> <i class="sl-flag flag-de"><div id="arabic"></div></i> <span class="active">Arabic</span></li>
+              <li (click)="English()"><i class="sl-flag flag-usa"><div id="english"></div></i> <span>English</span></li>
+            </ul>
+          </li>
+        </ul>
+      </a>
+    </a> 
+  
+
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-navbar py-4 bg-white js-sticky-header site-navbar-target"
+    role="banner">
+    <div class="container">
+      <div class="row ">
+        
+        <div class="col-12 col-xl-2 ">
+          <div class="mb-0 site-logo">
+            <a [routerLink]="['/home']">
+              <img class="ezicodeLogo"
+                [src]="Logo">
+            </a>
+          </div>
+          <div class="d-inline d-xl-none ml-md-0 mr-auto "
+          style="position: relative; top: 3px;"><a
+            class="site-menu-toggle  text-black">
+           </a>
+            <i class="fa fa-bars fa-2x ICONS " style="color: #00668f;"  (click)="open()" *ngIf="bar"></i>
+
+          </div>
+        </div>
+
+        <div class="col-md-1"></div>
+        <div class="col-12 col-md-9 d-none d-xl-block">
+          <nav class="site-navigation position-relative   " 
+            role="navigation">
+            <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+              <li *ngIf="!ar">
+
+                <a class="nav-link wow slideInUp"  [ngStyle]="myStyles"
+                  [routerLinkActive]="['active']"
+                  [routerLink]="['/home']">
+                    <i class="fa fa-home fa-2x " style="color: #00668f;"></i>
+                    <br>
+                  Home
+                </a>
+              </li>
+
+              <li *ngIf="ar"> 
+
+                <a class="nav-link wow slideInUp"  [ngStyle]="myStyles"
+                  [routerLinkActive]="['active']"
+                  [routerLink]="['/home']">
+                    <i class="fa fa-home fa-2x " style="color: #00668f; margin-left: 37px;"></i>
+                    <br>
+                  الصفحة الرئيسية
+                </a>
+              </li>
+
+              <li  *ngIf="!ar"><a class="nav-link wow slideInUp" [ngStyle]="myStyles"
+                  [routerLinkActive]="['active']"
+                  [routerLink]="['/about']">
+             
+                    <i class="fa fa-user fa-2x  " style="color: #00668f;"></i>
+                    <br>
+                  About Us</a></li>
+
+                  <li  *ngIf="ar" ><a class="nav-link wow slideInUp" [ngStyle]="myStyles"
+                    [routerLinkActive]="['active']"
+                    [routerLink]="['/about']">
+               
+                      <i class="fa fa-user fa-2x  " style="color: #00668f; margin-left: 9px;"></i>
+                      <br>
+                      معلومات عنا  </a></li>
+  
+                      
+                
+    
+              <li  *ngIf="!ar"  ><a class="nav-link " [ngStyle]="myStyles"
+                  [routerLinkActive]="['active']"
+                  [routerLink]="['/whyezicodes']">
+                
+                    <i class="fa  fa-question fa-2x " style="color: #00668f;" ></i>
+                  <br>
+                  Why EZI codes</a></li>
+
+
+                  <li  *ngIf="ar"  ><a class="nav-link   " [ngStyle]="myStyles"
+                    [routerLinkActive]="['active']"
+                    [routerLink]="['/whyezicodes']">
+                  
+                      <i class="fa fa-question-circle-o fa-2x "   style="color: #00668f; margin-left: 29px;" ></i> 
+                    <br>
+                    لماذا نحن ؟</a></li>
+          
+
+                  <li *ngIf="!ar"><a class="nav-link  wow slideInUp"  [ngStyle]="myStyles"
+                    [routerLinkActive]="['active']"
+                    [routerLink]="['/eziservices/digitalsolutionsandinnovationsKeyservices']">
+                  
+                    <i class="fa fa-handshake-o fa-2x" style="color: #00668f;" aria-hidden="true"></i>
+                    <br>
+                    SERVICES  </a></li>
+
+                    <li *ngIf="ar"><a class="nav-link  wow slideInUp"  [ngStyle]="myStyles"
+                      [routerLinkActive]="['active']"
+                      [routerLink]="['/eziservices/digitalsolutionsandinnovationsKeyservices']">
+                    
+                      <i class="fa fa-handshake-o fa-2x" style="color: #00668f;" aria-hidden="true"></i>
+                      <br>
+                      الخدمات  </a></li>
+
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link no-caret" data-toggle="dropdown" role="button">
+                      <i class="fa fa-handshake-o fa-2x" style="color: #00668f;" aria-hidden="true"></i>
+                      <h6 class="nav-link-inner--text">SERVICES</h6>
+                    </a>
+                    <div class="dropdown-menu">
+                      <a [routerLink]="['/eziservices/digitalsolutionsandinnovationsKeyservices']" class="dropdown-item">Digital Solutions and
+                        Innovations Key Services</a>
+                      <a [routerLink]="['/eziservices/endtoendsolutions']" class="dropdown-item">End To End Solutions 2</a>
+                      <a [routerLink]="['/eziservices/consultation']"class="dropdown-item">Consultation</a>
+                      <a [routerLink]="['/eziservices/consultation']"class="dropdown-item">Customer Care </a>
+                    </div>
+                  </li>
+                  
+               -->
+               
+
+        
+              <li *ngIf="!ar">
+                <a class="nav-link "  [ngStyle]="myStyles"
+                  [routerLinkActive]="['active']"
+                  [routerLink]="['/contact']">
+                  <i class="fa fa-envelope fa-2x " style="color: #00668f;"></i>
+                  <br>Contact
+                </a>
+              </li>
+
+              <li *ngIf="ar">
+                <a class="nav-link " 
+                  [routerLinkActive]="['active']"  [ngStyle]="myStyles"
+                  [routerLink]="['/contact']">
+                  <i class="fa fa-envelope fa-2x " style="color: #00668f;"></i>
+                  <br>تواصل بنا
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+      
+
+      </div>
+    </div>
+
+  </header>
+
+
+
+
+</div>
+
+
+<!-- Sidebar-->
+
+<div class="sidebar-container fixed-top" data-aos="fade-down-right" *ngIf="sidebar">
+  <div class="sidebar-logo text-right">
+    <i class="fa fa-window-close fa-2x" aria-hidden="true" (click)="close()"></i>
+ 
+  </div>
+  <ul class="sidebar-navigation">
+    <li *ngIf="!ar">
+      <a [routerLink]="['/home']" [ngStyle]="myStyles">
+       Home
+      </a>
+    </li>
+    <li *ngIf="ar">
+      <a [routerLink]="['/home']" [ngStyle]="myStyles">
+        الصفحة الرئيسية
+      </a>
+    </li>
+    <li *ngIf="!ar">
+      <a [routerLink]="['/about']" [ngStyle]="myStyles">
+       About Us
+      </a>
+    </li>
+
+    <li *ngIf="ar">
+      <a [routerLink]="['/about']" [ngStyle]="myStyles">
+        معلومات عنا
+      </a>
+    </li>
+
+    <li *ngIf="!ar" class="header" [ngStyle]="myStyles" >Ezi Codes  Menu</li>
+    <li *ngIf="ar" class="header" [ngStyle]="myStyles" >قائمة البيانات   </li>
+
+
+
+    <li *ngIf="!ar">
+      <a [routerLink]="['/whyezicodes']" [ngStyle]="myStyles">
+         Why Ezi Codes
+      </a>
+    </li>
+    <li *ngIf="ar">
+      <a [routerLink]="['/whyezicodes']" [ngStyle]="myStyles">
+        لماذا نحن  
+      </a>
+    </li>
+
+    <li *ngIf="!ar">
+      <a [routerLink]="['/eziservices/digitalsolutionsandinnovationsKeyservices']" [ngStyle]="myStyles">
+         Services
+      </a>
+    </li>
+
+    <li *ngIf="ar">
+      <a [routerLink]="['/eziservices/digitalsolutionsandinnovationsKeyservices']" [ngStyle]="myStyles">
+        الخدمات
+      </a>
+    </li>
+    <li *ngIf="!ar">
+      <a [routerLink]="['/contact']" [ngStyle]="myStyles">
+       Contact
+      </a>
+    </li>
+  
+    
+    <li *ngIf="ar">
+      <a [routerLink]="['/contact']" [ngStyle]="myStyles">
+      تواصل بنا
+    </a>
+  </li>
+    
+  </ul>
+</div>
+
+
+

@@ -1,0 +1,137 @@
+.section-shaped{
+    background-size: cover;
+    margin-bottom: 10%;
+// margin-top: 90px;
+    animation: animate 30s ease-in-out infinite;
+
+    
+}
+hr{
+  color: white;
+}
+@keyframes animate{
+  
+    0%{
+      // background-image: url('../../../assets/img/new2.png') ;
+      transform: scale(1.1)  ;
+      -ms-transform:scale(1.1); /* IE 9 */
+      -moz-transform:scale(1.1); /* Firefox */
+      -webkit-transform:scale(1.1); /* Safari and Chrome */
+      -o-transform:scale(1.1); /* Opera */
+  
+  
+    }
+    25%{
+      // background-image: url('../../../assets/img/new3.png') ;
+      transform: scale(1.2)  ;
+      -ms-transform:scale(1.2); /* IE 9 */
+      -moz-transform:scale(1.2); /* Firefox */
+      -webkit-transform:scale(1.2); /* Safari and Chrome */
+      -o-transform:scale(1.2); /* Opera */
+  
+  
+  
+    }
+    50%{
+      // background-image: url('../../../assets/img/new2.png');
+      transform: scale(1.1)  ;
+      -ms-transform:scale(1.1); /* IE 9 */
+      -moz-transform:scale(1.1); /* Firefox */
+      -webkit-transform:scale(1.1); /* Safari and Chrome */
+      -o-transform:scale(1.1); /* Opera */
+  
+  
+    }
+    75%{
+      // background-image: url('../../../assets/img/new3.png');
+      transform: scale(1.1)  ;
+      -ms-transform:scale(1.1); /* IE 9 */
+      -moz-transform:scale(1.1); /* Firefox */
+      -webkit-transform:scale(1.1); /* Safari and Chrome */
+      -o-transform:scale(1.1); /* Opera */
+    }
+    100%{
+      // background-image: url('../../../assets/img/new.png');
+      transform: scale(1.2)  ;
+    
+      -ms-transform:scale(1.2); /* IE 9 */
+      -moz-transform:scale(1.2); /* Firefox */
+      -webkit-transform:scale(1.2); /* Safari and Chrome */
+      -o-transform:scale(1.2); /* Opera */
+  
+    }
+  }
+  
+h1{
+    color: white ;
+    font-family: NoirStd 
+
+}
+h3{
+  color: white ;
+  font-family: NoirStd ;
+  font-size: 55px;
+  line-height: 75px;
+}
+p{
+    font-family: NoirStd;
+
+}
+.section-shaped {
+  background-color: #00668f;
+}
+
+
+#back {
+  background: url(http://www.tranexnet.com/img/back.png) repeat 20% 20%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.4;
+  z-index: -1;
+  -webkit-animation-name: backgroundAnimate;
+  -webkit-animation-duration: 500s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-name: backgroundAnimate;
+  -moz-animation-duration: 5s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-name: backgroundAnimate;
+  -o-animation-duration: 500s;
+  -o-animation-timing-function: linear;
+  -o-animation-iteration-count: infinite;
+  animation-name: backgroundAnimate;
+  animation-duration: 500s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+#front {
+  background: url(http://www.tranexnet.com/img/front.png) repeat 35% 35%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.6;
+  z-index: -1;
+  -webkit-animation-name: backgroundAnimate;
+  -webkit-animation-duration: 300s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-name: backgroundAnimate;
+  -moz-animation-duration: 300s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-name: backgroundAnimate;
+  -o-animation-duration: 300s;
+  -o-animation-timing-function: linear;
+  -o-animation-iteration-count: infinite;
+  animation-name: backgroundAnimate;
+  animation-duration: 300s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}

@@ -1,0 +1,54 @@
+.hero-section {
+	position: relative;
+	padding-top: 60px;
+  padding-bottom: 10px;
+  background-image: url('../../../assets/img/theme/Background-01.gif');
+   background-size: cover;
+   min-height: 100vh;
+;
+}
+.hero-section .container {
+	position: relative;
+	z-index: 5;
+}
+img{
+  margin-top: 10%;
+  margin-left: -20px;
+}
+
+
+
+@media only screen and (max-width: 991px) {
+  img{
+    margin-top: 70%;
+    margin-left: -20px;
+  }
+  
+}
+
+
+
+/* Large Mobile: 480px */
+
+@media only screen and (max-width: 767px) {
+  img{
+    margin-top: 70%;
+    margin-left: -20px;
+  }
+  
+
+
+}
+
+
+/* Small Mobile: 320px */
+
+@media only screen and (max-width: 479px) {
+
+  img{
+    margin-top: 60%;
+    margin-left: -5px;
+  }
+  
+
+}
